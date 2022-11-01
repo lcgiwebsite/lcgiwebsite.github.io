@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavenlyz Consultancy</title>
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <!-- Nav Bar -->
+
+    <section class="header">
+
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Demo Banner -->
+        <div class="ribbon ribbon-top-right"><span>Demo site</span></div>
+        <!-- Demo Banner -->
+
+        <!-- Center Text Box -->
+
+        <section class="about-us-page">
+
+            <div class="about-us-head">
+                <h1>About us</h1>
+            </div>
+
+            <div class="row">
+                <div class="what-we-do">
+                    <ul>
+                        <li><a href=""><h3>What we do</h3><img src="images/london.png"></a></li>
+                    </ul>
+                </div>
+                <div class="what-we-do">
+                    <ul>
+                        <li><a href=""><h3>Who we are</h3><img src="images/newyork.png"></a></li>
+                    </ul>
+                </div>
+                <div class="what-we-do">
+                    <ul>
+                        <li><a href=""><h3>Where we're going</h3><img src="images/washington.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+    </section>
+
+    </section>
+
+    <!-- Contact Page -->
+    <!-- JavaScript for Home Page Toggle Menu -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

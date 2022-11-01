@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Home Page Nav Bar */
+
+.header {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+nav .fa {
+    display: none;
+}
+
+/* demo banner */
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #3498db;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+/* Qualifications Page */
+
+.qualifications-row-1 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.qualifications-row-1 h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.course-col-1 p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.course-col-1 h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col-1 {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col-1:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+.courses-list-1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.qualifications-row-2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.course-col-2 p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.course-col-2 h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col-2 {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col-2:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+.courses-list-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.lcgi-button {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Qualifications page mobile view */
+
+@media(max-width: 700px) {
+
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #ffff;
+        border-left: solid black;
+        height: 100%;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #000000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .courses-list-1 {
+        flex-direction: column;
+    }
+    .courses-list-2 {
+        flex-direction: column;
+    }
+
+}
